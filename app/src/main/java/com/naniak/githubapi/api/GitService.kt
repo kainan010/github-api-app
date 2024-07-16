@@ -20,8 +20,6 @@ object GitService {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-
-
     fun getInterceptorClient(): OkHttpClient {
         val loggingInterceptor = HttpLoggingInterceptor()
         if (BuildConfig.DEBUG){
