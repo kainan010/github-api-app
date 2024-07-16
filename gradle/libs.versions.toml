@@ -18,10 +18,12 @@ pagingRuntime = "3.3.0"
 retrofit = "2.9.0"
 navigationFragmentKtx = "2.7.7"
 navigationUiKtx = "2.7.7"
+versionedparcelable = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
+androidx-versionedparcelable = { module = "androidx.versionedparcelable:versionedparcelable", version.ref = "versionedparcelable" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }

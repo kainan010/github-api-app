@@ -1,10 +1,7 @@
 package com.naniak.githubapi.features.home
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.naniak.githubapi.R
 import com.naniak.githubapi.databinding.ActivityMainBinding
 import com.naniak.githubapi.features.home.view.HomeFragment

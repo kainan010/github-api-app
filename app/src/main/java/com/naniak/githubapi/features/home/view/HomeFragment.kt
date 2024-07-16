@@ -15,18 +15,16 @@ import com.naniak.githubapi.features.home.viewmodel.HomeViewModel
 import com.naniak.githubapi.utils.Command
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import org.koin.android.viewmodel.ext.android.viewModel
 
 
 class HomeFragment : Fragment() {
 
-    companion
-    object {
+    companion object {
         fun newInstance() = HomeFragment()
     }
 
     private var binding: FragmentHomeBinding? = null
-    private val viewModel= HomeViewModel()
+    private val viewModel = HomeViewModel()
 
     private val adapter = AuthorItemAdapter {
         if (it.layoutInfo.isVisible) {
@@ -43,8 +41,7 @@ class HomeFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater, container, false)
@@ -78,6 +75,5 @@ class HomeFragment : Fragment() {
 
         binding = null
     }
-
 
 }

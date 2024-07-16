@@ -60,6 +60,7 @@ dependencies {
     implementation (libs.retrofit)
     implementation (libs.okhttp)
     implementation(libs.logging.interceptor)
+    implementation(libs.androidx.versionedparcelable)
 
     //Glide
     implementation (libs.glide)
@@ -76,5 +77,4 @@ dependencies {
 
     //Paging 3
     implementation(libs.androidx.paging.runtime)
-    implementation("androidx.versionedparcelable:versionedparcelable:1.2.0")
 }

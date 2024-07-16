@@ -1,14 +1,11 @@
 package com.naniak.githubapi.features.home.view.adapter
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.paging.PagingData
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.naniak.githubapi.databinding.ItemHomeBinding
-import com.naniak.githubapi.datamodel.DataAuthor
 import com.naniak.githubapi.datamodel.Item
 import com.naniak.githubapi.datamodel.Item.Companion.DIFF_CALBACK
 
@@ -35,5 +32,4 @@ class AuthorItemAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(getItem(position), onClickListener)
-
 }

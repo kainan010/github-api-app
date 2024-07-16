@@ -7,6 +7,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
+private const val CONNECTTIMEOUT = 5L
+private const val READTIMEOUT = 10L
+private const val WRITETIMEOUT = 10L
+
 object GitService {
 
     val gitApi: GitApi = getGitApiClient().create(GitApi::class.java)
@@ -27,9 +31,9 @@ object GitService {
         }
 
         val interceptor = OkHttpClient.Builder()
-            .connectTimeout(5,TimeUnit.SECONDS)
-            .readTimeout(10,TimeUnit.SECONDS)
-            .writeTimeout(10,TimeUnit.SECONDS)
+            .connectTimeout(CONNECTTIMEOUT, TimeUnit.SECONDS)
+            .readTimeout(READTIMEOUT, TimeUnit.SECONDS)
+            .writeTimeout(WRITETIMEOUT, TimeUnit.SECONDS)
             .addInterceptor(loggingInterceptor).build()
 
         return interceptor
