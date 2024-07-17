@@ -77,4 +77,15 @@ dependencies {
 
     //Paging 3
     implementation(libs.androidx.paging.runtime)
+
+    // Required -- JUnit 4 framework
+    implementation("org.mockito:mockito-core:2.5.0")
+    // Core library
+    androidTestImplementation("androidx.test:core:2.0")
+
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation("androidx.test:runner:2.0")
+    androidTestImplementation("androidx.test:rules:2.0")
+
+
 }
