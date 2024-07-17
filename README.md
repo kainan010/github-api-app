@@ -20,7 +20,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Logging Interceptor - OkHttp](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor) 
 
 ### 🛠 Pontos Para Melhoria 
-- Utilizado DETEKT, identificados pontos de melhoria como layout com números fixos e código comentado, com algumas observações adicionais.
+- Utilizado DETEKT, identificados pontos de melhoria como layout com números fixos e código comentado(Intencionalmente), com algumas observações adicionais.
 
 - Melhoria do layout para torná-lo mais intuitivo para o usuário.
 
@@ -30,7 +30,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - Criar tela de login.
 
-- Realizar testes de UI utilizando Espresso.
+- Realizar testes Unitarios.
 
 - Implementar suporte para mudanças de orientação das telas sem perder o estado.
 
